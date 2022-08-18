@@ -1,0 +1,34 @@
+@import url('http://fonts.cdnfonts.com/css/ascender-sans');
+
+body{
+    font-family: 'Ascender Sans', sans-serif;
+}
+#bar{
+    border-bottom: 1px solid;
+    padding: 1%;
+}
+#loginbar{
+    float: right;
+} 
+#container{
+    width: 40vw;
+    height: 30vh;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 15%;
+    font-size: larger;
+}
+
+button {
+    width: 100px;
+    height: 25px;
+    background-color: rgb(147, 206, 248);
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    border-top: 1px solid;
+    bottom: 0;
+}

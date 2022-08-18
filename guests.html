@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guests</title>
+    <link rel="stylesheet" href="guests.css">
+</head>
+<body>
+    <div id="bar">
+        <a href="">Home</a>
+        <a href="">Guests</a>
+        <a href="">Rooms</a>
+        <a href="">Reservations</a>
+        <a href="">Contact</a>
+        <a id ="loginbar" href="index.html">Logout</a>
+    </div>
+    
+    <div id="left-block">
+        <h1>Guests</h1>
+        <p>Show 
+            <select name="amount">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="25">25</option>
+          </select>
+          entries
+        </p>
+    </div>
+    <div id="right-block">
+        <a id="add" href="add.html">Add new Guest</a><br>
+        <a>Search: </a>
+        <input type="text" id="search" name="search">
+    </div>
+    
+
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Phone Number</th>
+            <th>First</th>
+            <th>Last</th>
+            <th>Email Adress</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>+55 (31) 9 9999-9999</td>
+            <td>John</td>
+            <td>Doe</td>
+            <td>dsanjdsa@gmail.com</td>
+        </tr>
+    </table>
+
+
+    
+    <footer>
+        <p>Sparkling Water Hostel. Sparkling water main st. 1000. Caxambu-MG.</p>
+    </footer>
+    <script src="guests.js"></script>
+</body>
+</html>
