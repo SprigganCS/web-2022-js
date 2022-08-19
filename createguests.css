@@ -1,0 +1,82 @@
+@import url('http://fonts.cdnfonts.com/css/ascender-sans');
+
+body{
+    font-family: 'Ascender Sans', sans-serif;
+}
+#address{
+    width: 98.7%;
+    margin-left: 0.44%;
+}
+#bar{
+    border-bottom: 1px solid;
+    padding: 1%;
+}
+#loginbar{
+    float: right;
+} 
+#container{
+    width: 95vw;
+    height: 30vh;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 33px;
+    margin-top: 3%;
+    font-size: larger;
+}
+#country{
+    width: 61%;
+}
+#state{
+    width: 36%;
+}
+#firstname{
+    width: 48.5%;
+   
+}
+#lastname{
+    width: 48.5%;
+ 
+}
+#email{
+    width: 48.5%;
+    
+}
+#phone{
+    width: 48.5%;
+    
+}
+.save{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.44cm;
+}
+.cs{
+    display: flex;
+    height: 7.5%;     
+    justify-content: space-between;
+}
+.primo{
+    display: flex;
+    height: 7.5%;     
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.primo2{
+    display: flex;
+    height: 7.5%;     
+    justify-content: space-between;
+
+}
+button {
+    width: 100px;
+    height: 25px;
+    background-color: rgb(147, 206, 248);
+    border-radius: 0.25cm;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    border-top: 1px solid;
+    bottom: 0;
+}
