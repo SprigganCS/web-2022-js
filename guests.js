@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function (){
 
     var table = document.getElementById("gueststable");
     let size = Object.keys(obj).length;
-    console.log(obj);
     
     for(let i=0; i<size; i++){
 
@@ -28,28 +27,46 @@ document.addEventListener('DOMContentLoaded', function (){
         cell = row.insertCell(0);
         cell.innerHTML = obj[size-i-1]["id"];
     }
+
+    console.log(localStorage);
+    if(localStorage.length>0){
+        console.log(localStorage.getItem('email'));
+        var row = table.insertRow(size+1);
+        var cell = row.insertCell(0);
+        cell.innerHTML = localStorage.getItem('email');
+        cell = row.insertCell(0);
+        cell.innerHTML = localStorage.getItem('lastname');
+        cell = row.insertCell(0);
+        cell.innerHTML = localStorage.getItem('firstname');
+        cell = row.insertCell(0);
+        cell.innerHTML = localStorage.getItem('phone');
+        cell = row.insertCell(0);
+        cell.innerHTML = size+1;
+    }
 });
 
 
-document.getElementById('savebtn').addEventListener('click', function () {
-    window.location.href="guests.html";
-    let firstname = document.getElementById('firstname').value;
-    let lastname = document.getElementById('lastname').value;
-    let email = document.getElementById('email').value;
-    let phone = document.getElementById('phone').value;
-    
-    var row = table.insertRow(1);
-    var cell = row.insertCell(0);
-    cell.innerHTML = email;
-    cell = row.insertCell(0);
-    cell.innerHTML = lastname;
-    cell = row.insertCell(0);
-    cell.innerHTML = firstname;
-    cell = row.insertCell(0);
-    cell.innerHTML = phone;
-    cell = row.insertCell(0);
-    cell.innerHTML = size+1;
-}); 
+function myFunction() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("search");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("gueststable");
+    tr = table.getElementsByTagName("tr");
+  
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+
+
 
 
 
